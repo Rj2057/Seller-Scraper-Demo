@@ -51,7 +51,7 @@ jobs:
     steps:
       # Step 1: Deploy the application to Render
       - name: Deploy to Render
-        uses: chaybeynon/render-deploy-action@v1
+        uses: hootsuite/render-deploy-action@v1.2.0
         with:
           # Your unique ID for the service you create on Render
           # This is stored securely in GitHub Secrets
