@@ -51,7 +51,7 @@ jobs:
     steps:
       # Step 1: Deploy the application to Render
       - name: Deploy to Render
-        uses: johnbeynon/render-deploy-action@v0.1.0
+        uses: chaybeynon/render-deploy-action@v1
         with:
           # Your unique ID for the service you create on Render
           # This is stored securely in GitHub Secrets
