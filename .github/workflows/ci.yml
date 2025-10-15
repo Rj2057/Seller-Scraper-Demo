@@ -33,16 +33,3 @@ jobs:
           name: pytest-report
           path: report.xml
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-    steps:
-      # THIS IS THE CORRECTED STEP
-      - name: Deploy to Render
-        uses: Render/action-deploy@v1
-        with:
-          # Your unique ID for the service you create on Render
-          service-id: ${{ secrets.RENDER_SERVICE_ID }}
-          # Your API key for Render
-          api-key: ${{ secrets.RENDER_API_KEY }}
